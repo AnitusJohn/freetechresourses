@@ -666,7 +666,7 @@ a {
 
 .f-h3 {
   font-size: 34px;
-  color: #32325d;
+  color: #3eba80;
 }
 
 ul,
@@ -719,12 +719,21 @@ ol {
   font-size: 15px;
   line-height: 29px;
 }
-
+.column h4{
+  color: #fff;
+  font-weight: 700;
+}
+.column ul li a{
+  color: #fff;
+}
+a{
+  display: inline-block;
+}
 .footer {
   float: left;
   width: 100%;
   padding: 60px 0;
-  background-color: #ffff;
+  background-color: #131313;
 }
 
 .subscribe {
