@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/x-icon" href="./images/favicon.png">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="./js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,7 +17,7 @@
 
 
 <body>
-	<header class="container-fluid">
+	<header class="container-fluid d-none d-sm-block">
 
 		<div class="nav_head">
 			<div class="nav_head_left">
@@ -33,40 +34,48 @@
 
 			<div class="nav_head_right">
 				<div class="wrapper">
-					<li><a href="https://www.facebook.com/jeevitechsolutions/"><div class="bg-ico" id="facebook"><i class="fa fa-facebook-f"></i></div></a></li>
+					<li><a href="https://www.facebook.com/jeevitechsolutions/">
+							<div class="bg-ico" id="facebook"><i class="fa fa-facebook-f"></i></div>
+						</a></li>
 
-					<li><a href="https://www.youtube.com/channel/UCW_gywl69bHD0BCVSytjs_A"><div class="bg-ico" id="youtube"><i class="fa fa-youtube-play " style="color: red;"></i></div></a></li>
+					<li><a href="https://www.youtube.com/channel/UCW_gywl69bHD0BCVSytjs_A">
+							<div class="bg-ico" id="youtube"><i class="fa fa-youtube-play " style="color: red;"></i>
+							</div>
+						</a></li>
 				</div>
 			</div>
 		</div>
 
 	</header>
-	
-	<div class="mob_nav d-sm-block d-md-none">
+
+	<div class="mob_nav d-sm-block d-md-none ">
 		<a href="./index.html"><img style=" height: 50px;" src="./images/tech_logo.png" alt="logo">
 		</a>
-		
-		<span type="" class=""style="float: right; cursor: pointer; width:50%;"  data-bs-toggle="collapse" data-bs-target="#demo">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"   style="float: right;" width="24" height="24"><path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z" fill="rgba(62,186,128,1)"></path></svg>
-					<ul id="demo" class="collapse menu_items">
-					  <li><a id="makeNoise" href="#">HOME</a></li>
-					  <li><a id="makeNoise" href="./aboutus.html">ABOUT</a></li>
-					  <li><a href="./contactus.html">CONTACT US</a></li>
-					  <li><a href="./services.html">SERVICES</a></li>
-					</ul>
-					
-			</span>
+
+		<span type="" class="" style="float: right; cursor: pointer; width:50%;" data-bs-toggle="collapse"
+			data-bs-target="#demo">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="float: right;" width="24" height="24">
+				<path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z" fill="rgba(62,186,128,1)"></path>
+			</svg>
+			<ul id="demo" class="collapse menu_items">
+				<li><a id="makeNoise" href="#">HOME</a></li>
+				<li><a id="makeNoise" href="./aboutus.html">ABOUT_US</a></li>
+				<li><a href="./contactus.html">CONTACT_US</a></li>
+				<li><a href="./services.html">SERVICES</a></li>
+			</ul>
+
+		</span>
 		<div>
 		</div>
 	</div>
 
-	<section class="tech_banner">
+	<section class="tech_banner d-none d-sm-block">
 
 		<div class="container">
 			<h1 class="text-center">
-				place to get technology resources & alternatives</h1>
+				Empowering Success with Valuable Resources</h1>
 			<h2 class="text-center">
-				Here you'll find over resources to help you achieve your goals.
+				Your Ultimate Source for Knowledge, Support, and Success
 			</h2>
 
 			<div class="cus-sa-box">
@@ -74,8 +83,7 @@
 					<a href="https://vuejs.org/">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block">
-								<img
-									src="./images/vue.js_techresources.png">
+								<img src="./images/vue.js_techresources.png">
 							</div>
 							<div class="cus-sa-boxname">Vue.js</div>
 						</div>
@@ -102,13 +110,12 @@
 					</a>
 				</div>
 
-				
+
 				<div class="cus-sa-box-column">
 					<a href="https://angular.io/">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block ">
-								<img
-									src="./images/angular_techresources.png">
+								<img src="./images/angular_techresources.png">
 							</div>
 							<div class="cus-sa-boxname">Angular</div>
 						</div>
@@ -116,8 +123,7 @@
 					<a href="https://react.dev/">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block ">
-								<img
-									src="./images/react_techresources.png">
+								<img src="./images/react_techresources.png">
 							</div>
 							<div class="cus-sa-boxname">React</div>
 						</div>
@@ -127,8 +133,7 @@
 					<a href="#">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block ">
-								<img
-									src="./images/domain_techresources.png">
+								<img src="./images/domain_techresources.png">
 							</div>
 							<div class="cus-sa-boxname">Domain &amp; Hosting</div>
 						</div>
@@ -136,8 +141,7 @@
 					<a href="https://wordpress.com/">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block ">
-								<img
-									src="./images/wordpress_techresources.png">
+								<img src="./images/wordpress_techresources.png">
 							</div>
 							<div class="cus-sa-boxname">WordPress</div>
 						</div>
@@ -147,8 +151,7 @@
 					<a href="https://www.genesys.com/">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block ">
-								<img
-									src="./images/artificialIntelligence_techresource.png">
+								<img src="./images/artificialIntelligence_techresource.png">
 							</div>
 							<div class="cus-sa-boxname">Artificial Intelligence</div>
 						</div>
@@ -156,8 +159,7 @@
 					<a href="https://www.javascript.com/">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block ">
-								<img
-									src="./images/javascript_techresources.png">
+								<img src="./images/javascript_techresources.png">
 							</div>
 							<div class="cus-sa-boxname">JavaScript</div>
 						</div>
@@ -165,20 +167,19 @@
 				</div>
 
 				<div class="cus-sa-box-column">
-					<a href="https://ads.google.com/intl/en_in/start/overview-adon/?subid=in-en-adon-awa-sch-a-bos!o3~12755249a6841b4e802536bf6a766167~p71078860292~&&&&&&msclkid=12755249a6841b4e802536bf6a766167&gclid=12755249a6841b4e802536bf6a766167&gclsrc=3p.ds">
+					<a
+						href="https://ads.google.com/intl/en_in/start/overview-adon/?subid=in-en-adon-awa-sch-a-bos!o3~12755249a6841b4e802536bf6a766167~p71078860292~&&&&&&msclkid=12755249a6841b4e802536bf6a766167&gclid=12755249a6841b4e802536bf6a766167&gclsrc=3p.ds">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block ">
-								<img
-									src="./images/digitalmarketing_techresource.png">
+								<img src="./images/digitalmarketing_techresource.png">
 							</div>
-							<div class="cus-sa-boxname">Digital Marketing</div>
+							<div class="cus-sa-boxname">Digital Marketing.....</div>
 						</div>
 					</a>
 					<a href="https://www.hackerone.com/">
 						<div class="cus-sa-box-item">
 							<div class="cus-sa-boximg-block ">
-								<img
-									src="./images/hacking_techresources.png">
+								<img src="./images/hacking_techresources.png">
 							</div>
 							<div class="cus-sa-boxname">Hacking</div>
 						</div>
@@ -199,7 +200,38 @@
 		</div>
 	</section>
 
-	<section class="most_view">
+	<section class="most_view ">
+		<div class="container">
+			<!-- Nav pills -->
+			<h1 class="text-center">category</h1>
+			<ul class="nav nav-pills text-center" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-bs-toggle="pill" href="#home">UI & UX Design Inspiration</a>
+
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="pill" href="#menu1">UI & UX Resources</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="pill" href="#menu2">SEO</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="pill" href="#menu2">Site Audit</a>
+				</li>
+				
+				<li class="nav-item">
+
+					<a class="nav-link" data-bs-toggle="pill" href="#menu2">Site Crawlers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="pill" href="#menu2">Analytics</a>
+				</li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="home" class="container tab-pane active"><br>
+					<section class="most_view">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -208,20 +240,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.uplabs.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/Uplaps.png" alt="uplabs">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/Uplaps.png" alt="uplabs">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.uplabs.com/"><span>Uplabs</span></a></div>
+								<div class="card_body_each_a"><a href="https://www.uplabs.com/"><span>Uplabs</span></a>
+								</div>
 							</div>
 
 							<div class="col-md-12">
-								<p>UpLabs is the place to find high-quality design resources for designers, creative agencies, and developers.</p>
+								<p>UpLabs is the place to find high-quality design resources for designers, creative
+									agencies, and developers.</p>
 							</div>
+
+
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.uplabs.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.uplabs.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -230,21 +266,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://scrnshts.club/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/scrnshts.png" alt="scrnshts">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/scrnshts.png" alt="scrnshts">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://scrnshts.club/"><span>Scrnshts</span></a></div>
+								<div class="card_body_each_a"><a href="https://scrnshts.club/"><span>Scrnshts</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>A collection of the finest app store design screenshots.</p>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://scrnshts.club/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center">
+									<a class="btn_visit_w"
+									
+										href="https://scrnshts.club/">Visit Website</a>
+							    </div>
 							</div>
 						</div>
 					</div>
@@ -253,20 +293,21 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://dribbble.com/shots">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/dribbble.png" alt="dribbble">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/dribbble.png" alt="dribbble">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://dribbble.com/shots"><span>Dribbble</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://dribbble.com/shots"><span>Dribbble</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>Shots from popular and up and coming designers in the Dribbble community.</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.uplabs.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.uplabs.com/">Visit Website</a></div>
 
 							</div>
 
@@ -277,24 +318,26 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.behance.net/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/behance.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/behance.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.behance.net/"><span>Behance</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.behance.net/"><span>Behance</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Showcase and discover the latest work from top online portfolios by creative professionals.
+									Showcase and discover the latest work from top online portfolios by creative
+									professionals.
 
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.behance.net/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.behance.net/">Visit Website</a></div>
 
 							</div>
 
@@ -305,23 +348,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://uigarage.net/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/ui_garage.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/ui_garage.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://uigarage.net/"><span>UI Garage</span></a></div>
+								<div class="card_body_each_a"><a href="https://uigarage.net/"><span>UI Garage</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Specific design patterns for Web, iOS, Android and Mac.
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://uigarage.net/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://uigarage.net/">Visit Website</a></div>
 
 							</div>
 
@@ -332,23 +376,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.uisources.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/ui_sources.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/ui_sources.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.uisources.com/"><span>UI Sources</span></a></div>
+								<div class="card_body_each_a"><a href="https://www.uisources.com/"><span>UI
+											Sources</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Discover the best interactions from the best designed and top grossing apps.
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.uisources.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.uisources.com/">Visit Website</a></div>
 
 							</div>
 
@@ -359,24 +404,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://uijar.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/ui_jar.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/ui_jar.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
 								<div class="card_body_each_a"><a href="https://uijar.com/"><span>UI Jar</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Handpicked design inspiration for your real life projects.
 
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://uijar.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://uijar.com/">Visit Website</a></div>
 
 							</div>
 
@@ -387,23 +432,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://collectui.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/cui.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/cui.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://collectui.com/"><span>Collect UI</span></a></div>
+								<div class="card_body_each_a"><a href="https://collectui.com/"><span>Collect
+											UI</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Daily inspiration collected from daily ui archive and beyond.
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://collectui.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://collectui.com/">Visit Website</a></div>
 
 							</div>
 
@@ -415,22 +461,23 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://mobbin.com/browse/ios/apps">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/Mobbin.png" alt="Mobbin">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/Mobbin.png" alt="Mobbin">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://mobbin.com/browse/ios/apps"><span>Mobbin</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://mobbin.com/browse/ios/apps"><span>Mobbin</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Discover the latest iOS UI design patterns.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://mobbin.com/browse/ios/apps">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://mobbin.com/browse/ios/apps">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -439,23 +486,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://screenlane.com/?ref=uimovement">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/screenlane.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/screenlane.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://screenlane.com/?ref=uimovement"><span>UI Movement</span></a></div>
+								<div class="card_body_each_a"><a href="https://screenlane.com/?ref=uimovement"><span>UI
+											Movement</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									A community of design enthusiasts who share the most interesting and unique UI designs.
+									A community of design enthusiasts who share the most interesting and unique UI
+									designs.
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://screenlane.com/?ref=uimovement">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://screenlane.com/?ref=uimovement">Visit Website</a></div>
 							</div>
 
 						</div>
@@ -465,23 +514,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.awwwards.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/awward.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/awward.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.awwwards.com/"><span>Awwards</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.awwwards.com/"><span>Awwards</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Recognising talent of the best developers, designers and web agencies in the world.
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.awwwards.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.awwwards.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -490,48 +540,50 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.lapa.ninja/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/lapa.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/lapa.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.lapa.ninja/"><span>Lapa Ninja</span></a></div>
+								<div class="card_body_each_a"><a href="https://www.lapa.ninja/"><span>Lapa
+											Ninja</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									The best landing page design inspiration from around the web.
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.lapa.ninja/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.lapa.ninja/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				
+
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://siiimple.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/siiimple.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/siiimple.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://siiimple.com/"><span>Siiimple</span></a></div>
+								<div class="card_body_each_a"><a href="https://siiimple.com/"><span>Siiimple</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									A minimalist css design gallery.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://siiimple.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://siiimple.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -540,21 +592,22 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://in.pinterest.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/pinterest.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/pinterest.png" alt="">
 						</a>
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://in.pinterest.com/"><span>Pinterest</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://in.pinterest.com/"><span>Pinterest</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Discover beautiful UI projects across web and mobile.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://in.pinterest.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://in.pinterest.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -562,22 +615,23 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://pageflows.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/pageflows.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/pageflows.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://pageflows.com/"><span>Page Flows</span></a></div>
+								<div class="card_body_each_a"><a href="https://pageflows.com/"><span>Page
+											Flows</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									User flow videos & screenshots to inspire you when you're stuck.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://pageflows.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://pageflows.com/">Visit Website</a></div>
 							</div>
 
 						</div>
@@ -587,23 +641,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://designmunk.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/designmunk.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/designmunk.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://designmunk.com/"><span>DesignMunk</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://designmunk.com/"><span>DesignMunk</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									DesignMunk is a curated gallery showcasing fresh and amazing landing 
+									DesignMunk is a curated gallery showcasing fresh and amazing landing
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://designmunk.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://designmunk.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -613,328 +668,361 @@
 			</div>
 		</div>
 	</section>
-
-
-
-
-
-
-	<section class="most_view">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="most_head">UI & UX Resources</h1>
 				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://mockupsforfree.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/mockupsfor.png" alt="">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://mockupsforfree.com/"><span>Mockups</span></a></div>
-							</div>
-
-							<div class="col-md-12">
-								<p>
-								Discover a huge collection of exclusive premium mockups.</p>
-							</div>
-
+				<div id="menu1" class="container tab-pane fade"><br>
+					<section class="most_view">
+						<div class="container">
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://mockupsforfree.com/">Visit Website</a></div>
+								<div class="col-md-12">
+									<h1 class="most_head">UI & UX Resources</h1>
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://mockupsforfree.com/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/mockupsfor.png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://mockupsforfree.com/"><span>Mockups</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													Discover a huge collection of exclusive premium mockups.</p>
+											</div>
+				
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://mockupsforfree.com/">Visit Website</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://www.ui8.net/category/freebies">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/ui8.png" alt="scrnshts">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://www.ui8.net/category/freebies"><span>UI8</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													UI Kits, Wireframes, Icons, Fonts and more.
+												</p>
+											</div>
+				
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://www.ui8.net/category/freebies">Visit Website</a></div>
+											</div>
+				
+										</div>
+									</div>
+				
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://freebiesui.com/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/freebies.png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://freebiesui.com/"><span>FreebiesUI</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>Download for free great freebies for Photoshop, Sketch, Principle & XD.</p>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://freebiesui.com/">Visit Website</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+				
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://freebiesupply.com/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/freebie.png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://freebiesupply.com/"><span>DesignMunk</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													Collection of free resources for designers.
+												</p>
+				
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://freebiesupply.com/">Visit Website</a></div>
+											</div>
+										</div>
+									</div>
+				
+								</div>
+				
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://www.uplabs.com/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/Uplaps.png" alt="uplabs">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a href="https://www.uplabs.com/"><span>Uplabs</span></a>
+												</div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>The best of design & development inspiration, resources and freebies.</p>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://www.uplabs.com/">Visit Website</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://freebiesbug.com/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/freebiesbug.png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://freebiesbug.com/"><span>Freebiesbug</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													Free high-quality design resources.
+												</p>
+				
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://freebiesbug.com/">Visit Website</a></div>
+											</div>
+				
+										</div>
+									</div>
+				
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://www.mockupworld.co/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/mockupworld.png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://www.mockupworld.co/"><span>Mockup</span></a></div>
+											</div>
+				
+				
+											<div class="col-md-12">
+												<p>
+													Free collection of PSD and Sketch files from independent creatives around the world.
+												</p>
+											</div>
+				
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://www.mockupworld.co/">Visit Website</a></div>
+											</div>
+				
+										</div>
+									</div>
+				
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://freebiesupply.com/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/freepik (1).png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://freebiesupply.com/"><span>Freepik</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													The best high-quality photos, designs, and mockups
+												</p>
+				
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center">
+													<a class="btn_visit_w" href="https://freebiesupply.com/">Visit Website</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+				
+				
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://www.ui8.net/category/freebies">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/ui8.png" alt="scrnshts">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.ui8.net/category/freebies"><span>UI8</span></a></div>
-							</div>
-							
-							<div class="col-md-12">
-								<p>
-									UI Kits, Wireframes, Icons, Fonts and more.
-								</p>
-							</div>
-							
+				<div id="menu2" class="container tab-pane fade"><br>
+					<section class="most_view">
+						<div class="container">
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.ui8.net/category/freebies">Visit Website</a></div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://freebiesui.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/freebies.png" alt="">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://freebiesui.com/"><span>FreebiesUI</span></a></div>
-							</div>
-							
-							<div class="col-md-12">
-								<p>Download for free great freebies for Photoshop, Sketch, Principle & XD.</p>
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://freebiesui.com/">Visit Website</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://freebiesupply.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/freebie.png" alt="">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://freebiesupply.com/"><span>DesignMunk</span></a></div>
-							</div>
-							
-							<div class="col-md-12">
-								<p>
-									Collection of free resources for designers.
-								</p>
-							
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://freebiesupply.com/">Visit Website</a></div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://www.uplabs.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/Uplaps.png" alt="uplabs">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.uplabs.com/"><span>Uplabs</span></a></div>
-							</div>
-
-							<div class="col-md-12">
-								<p>The best of design & development inspiration, resources and freebies.</p>
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.uplabs.com/">Visit Website</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://freebiesbug.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/freebiesbug.png" alt="">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://freebiesbug.com/"><span>Freebiesbug</span></a></div>
-							</div>
-							
-							<div class="col-md-12">
-								<p>
-									Free high-quality design resources.
-								</p>
-							
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://freebiesbug.com/">Visit Website</a></div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://www.mockupworld.co/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/mockupworld.png" alt="">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.mockupworld.co/"><span>Mockup</span></a></div>
-							</div>
-							
-
-							<div class="col-md-12">
-								<p>
-									Free collection of PSD and Sketch files from independent creatives around the world.
-								</p>
-							</div>
-
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.mockupworld.co/">Visit Website</a></div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://freebiesupply.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/freepik (1).png" alt="">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://freebiesupply.com/"><span>Freepik</span></a></div>
-							</div>
-							
-							<div class="col-md-12">
-								<p>
-									The best high-quality photos, designs, and mockups
-								</p>
-							
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center">
-									<a class="btn_visit_w" href="https://freebiesupply.com/">Visit Website</a></div>
+								<div class="col-md-12">
+									<h1 class="most_head">SEO</h1>
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://moz.com/beginners-guide-to-seo">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/moz.png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://moz.com/beginners-guide-to-seo"><span>Moz</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													Backed by the largest community of SEOs on the planet, Moz builds tools that make
+													SEO, inbound marketing, link building, and content marketing easy.</p>
+											</div>
+				
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://moz.com/beginners-guide-to-seo">Visit Website</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a
+											href="https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=en&visit_id=638036750916281699-1414759021&rd=1">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/seo_g.png" alt="scrnshts">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=en&visit_id=638036750916281699-1414759021&rd=1"><span>Google
+															SEO</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													Search Engine Optimization (SEO) is the practice of continuously optimizing a
+													website for higher rankings in the organic search results
+												</p>
+											</div>
+				
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=en&visit_id=638036750916281699-1414759021&rd=1">Visit
+														Website</a></div>
+											</div>
+				
+										</div>
+									</div>
+				
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://www.iloveseo.net/how-to-use-hreflang-correctly/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/iloveseo.png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a
+														href="https://www.iloveseo.net/how-to-use-hreflang-correctly/"><span>IloveSEO</span></a>
+												</div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													A premier source of news and information by and for the SEO and search marketing
+													community to educate marketers at all experience levels.
+												</p>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://www.iloveseo.net/how-to-use-hreflang-correctly/">Visit Website</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sx-3 col-sm-4 col-md-3">
+									<div class="card col-md-12">
+										<a href="https://www.conductor.com/academy/">
+											<img sizes="(max-width: 550px) 100vw, 550px" src="./images/conductor.png" alt="">
+										</a>
+				
+										<div class="card_body">
+											<div class="card_body_each">
+												<div class="card_body_each_a"><a href="https://www.conductor.com/academy/"><span>Content
+															king</span></a></div>
+											</div>
+				
+											<div class="col-md-12">
+												<p>
+													ContentKing is an excellent SEO auditing tool and shines with its intuitive
+													interface compared to the clunky SEO tool competition
+												</p>
+				
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+														href="https://www.conductor.com/academy/">Visit Website</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
-
-
 			</div>
 		</div>
+		<!-- Tab panes -->
 	</section>
-	<section class="most_view">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="most_head">SEO</h1>
-				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://moz.com/beginners-guide-to-seo">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/moz.png" alt="">
-						</a>
 
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://moz.com/beginners-guide-to-seo"><span>Moz</span></a></div>
-							</div>
 
-							<div class="col-md-12">
-								<p>
-									Backed by the largest community of SEOs on the planet, Moz builds tools that make SEO, inbound marketing, link building, and content marketing easy.</p>
-							</div>
+	</div>
 
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://moz.com/beginners-guide-to-seo">Visit Website</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=en&visit_id=638036750916281699-1414759021&rd=1">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/seo_g.png" alt="scrnshts">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=en&visit_id=638036750916281699-1414759021&rd=1"><span>Google SEO</span></a></div>
-							</div>
-							
-							<div class="col-md-12">
-								<p>
-									Search Engine Optimization (SEO) is the practice of continuously optimizing a website for higher rankings in the organic search results
-								</p>
-							</div>
-							
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://developers.google.com/search/docs/fundamentals/do-i-need-seo?hl=en&visit_id=638036750916281699-1414759021&rd=1">Visit Website</a></div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://www.iloveseo.net/how-to-use-hreflang-correctly/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/iloveseo.png" alt="">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.iloveseo.net/how-to-use-hreflang-correctly/"><span>IloveSEO</span></a></div>
-							</div>
-							
-							<div class="col-md-12">
-								<p>
-									A premier source of news and information by and for the SEO and search marketing community to educate marketers at all experience levels.
-								</p>
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.iloveseo.net/how-to-use-hreflang-correctly/">Visit Website</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sx-3 col-sm-4 col-md-3">
-					<div class="card col-md-12">
-						<a href="https://www.conductor.com/academy/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/conductor.png" alt="">
-						</a>
-
-						<div class="card_body">
-							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.conductor.com/academy/"><span>Content king</span></a></div>
-							</div>
-							
-							<div class="col-md-12">
-								<p>
-									ContentKing is an excellent SEO auditing tool and shines with its intuitive interface compared to the clunky SEO tool competition
-								</p>
-							
-							</div>
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.conductor.com/academy/">Visit Website</a></div>
-							</div>
-						</div>
-					</div>
-
-				</div>
+	
 
 
 
-			</div>
-		</div>
-	</section>
+
+
+
+	
+
 	<section class="most_view">
 		<div class="container">
 			<div class="row">
@@ -944,22 +1032,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://mangools.com/siteprofiler/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/mangools.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/mangools.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://mangools.com/siteprofiler/"><span>Mangools</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://mangools.com/siteprofiler/"><span>Mangools</span></a></div>
 							</div>
 
 							<div class="col-md-12">
 								<p>
-									Cover all your SEO needs with a package of 5 super user friendly tools with proven data</p>
+									Cover all your SEO needs with a package of 5 super user friendly tools with proven
+									data</p>
 							</div>
 
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://mangools.com/siteprofiler/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://mangools.com/siteprofiler/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -967,23 +1057,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.semrush.com/features/site-audit/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/semrus.png" alt="scrnshts">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/semrus.png" alt="scrnshts">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.semrush.com/features/site-audit/"><span>Semrush</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.semrush.com/features/site-audit/"><span>Semrush</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Semrush is a popular SEO tool that specializes in keyword research
 								</p>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.semrush.com/features/site-audit/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.semrush.com/features/site-audit/">Visit Website</a></div>
 							</div>
 
 						</div>
@@ -993,22 +1085,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://morningscore.io/?refcom=15987">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/morningsource.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/morningsource.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://morningscore.io/?refcom=15987"><span>Morning Score</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://morningscore.io/?refcom=15987"><span>Morning Score</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Morningscore's simple design and fun game mechanics help you make sense of SEO.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://morningscore.io/?refcom=15987">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://morningscore.io/?refcom=15987">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1016,23 +1110,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://sitechecker.pro/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/sitechecker.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/sitechecker.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://sitechecker.pro/"><span>Site Checher Pro</span></a></div>
+								<div class="card_body_each_a"><a href="https://sitechecker.pro/"><span>Site Checher
+											Pro</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									sitechecker.pro is ranked #3666 in the Computers Electronics and Technology category
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://sitechecker.pro/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://sitechecker.pro/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1042,22 +1137,26 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.marketingminer.com/en/features/seo-audit">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/marketingmine.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/marketingmine.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.marketingminer.com/en/features/seo-audit"><span>Marketing Miner</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.marketingminer.com/en/features/seo-audit"><span>Marketing
+											Miner</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Marketing Miner is an SEO tool that will help you with keyword research, SEO audit, link building and competitor analysis.
+									Marketing Miner is an SEO tool that will help you with keyword research, SEO audit,
+									link building and competitor analysis.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.marketingminer.com/en/features/seo-audit">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.marketingminer.com/en/features/seo-audit">Visit Website</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1065,23 +1164,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://seositecheckup.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/seositecheckup.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/seositecheckup.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://seositecheckup.com/"><span>SEO Site Checkup</span></a></div>
+								<div class="card_body_each_a"><a href="https://seositecheckup.com/"><span>SEO Site
+											Checkup</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									SEO Site Checkup runs through a fast audit of your site, checking for proper tags and surfacing any errors that might come up
+									SEO Site Checkup runs through a fast audit of your site, checking for proper tags
+									and surfacing any errors that might come up
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://seositecheckup.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://seositecheckup.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1100,22 +1201,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.screamingfrog.co.uk/seo-spider/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/scemingfog.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/scemingfog.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.screamingfrog.co.uk/seo-spider/"><span>SEO Spider Tool</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.screamingfrog.co.uk/seo-spider/"><span>SEO Spider
+											Tool</span></a></div>
 							</div>
 
-							<div class="col-md-12"> 
-								   <p>
-									The WebSite Auditor SEO Spider tool digs through your site just like search engine bots do, leaving no tag unturned</p>
+							<div class="col-md-12">
+								<p>
+									The WebSite Auditor SEO Spider tool digs through your site just like search engine
+									bots do, leaving no tag unturned</p>
 							</div>
 
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.screamingfrog.co.uk/seo-spider/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.screamingfrog.co.uk/seo-spider/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1123,23 +1227,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.oncrawl.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/oncrawl.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/oncrawl.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.oncrawl.com/"><span>Oncrawl</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.oncrawl.com/"><span>Oncrawl</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									SEO software to analyze, predict and automate … Oncrawl offers two product suites to help you open Google’s blackbox and increase website revenues
+									SEO software to analyze, predict and automate … Oncrawl offers two product suites to
+									help you open Google’s blackbox and increase website revenues
 								</p>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.oncrawl.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.oncrawl.com/">Visit Website</a></div>
 							</div>
 
 						</div>
@@ -1149,22 +1255,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.botify.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/botify.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/botify.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.botify.com/"><span>Botify</span></a></div>
+								<div class="card_body_each_a"><a href="https://www.botify.com/"><span>Botify</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Missed content = missed profits. Botify helps you uncover those missed opportunities and turn them into profitable business outcomes
+									Missed content = missed profits. Botify helps you uncover those missed opportunities
+									and turn them into profitable business outcomes
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.botify.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.botify.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1172,23 +1280,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://sitebulb.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/sitebulb.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/sitebulb.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://sitebulb.com/"><span>Site Bulb</span></a></div>
+								<div class="card_body_each_a"><a href="https://sitebulb.com/"><span>Site Bulb</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Sitebulb is a desktop website crawler, that is much more than a crawler. It audits your website and produces actionable recommendations
+									Sitebulb is a desktop website crawler, that is much more than a crawler. It audits
+									your website and produces actionable recommendations
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://sitebulb.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://sitebulb.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1198,22 +1308,26 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://netpeaksoftware.com/spider?invite=874768c7">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/netpeak (1).png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/netpeak (1).png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://netpeaksoftware.com/spider?invite=874768c7"><span>Netpeak Spider</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://netpeaksoftware.com/spider?invite=874768c7"><span>Netpeak
+											Spider</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Netpeak Spider and Checker analyze competitors and their activities across the web. You can spend hours doing it manually, or you can use these tools
+									Netpeak Spider and Checker analyze competitors and their activities across the web.
+									You can spend hours doing it manually, or you can use these tools
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://netpeaksoftware.com/spider?invite=874768c7">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://netpeaksoftware.com/spider?invite=874768c7">Visit Website</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1221,24 +1335,26 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://jetoctopus.com/?ref=cJteWtM">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/jetoctal (1).png
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/jetoctal (1).png
 							" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://jetoctopus.com/?ref=cJteWtM"><span>Jet Octopus</span></a></div>
+								<div class="card_body_each_a"><a href="https://jetoctopus.com/?ref=cJteWtM"><span>Jet
+											Octopus</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									JetOctopus is a full-service SEO website crawler and auditor that helps you get valuable on-page data on every URL and improve SEO performance
+									JetOctopus is a full-service SEO website crawler and auditor that helps you get
+									valuable on-page data on every URL and improve SEO performance
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://jetoctopus.com/?ref=cJteWtM">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://jetoctopus.com/?ref=cJteWtM">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1257,23 +1373,27 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://marketingplatform.google.com/about/analytics/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/google_markrting.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/google_markrting.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://marketingplatform.google.com/about/analytics/"><span>Google Analytics</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://marketingplatform.google.com/about/analytics/"><span>Google
+											Analytics</span></a></div>
 							</div>
 
-							<div class="col-md-12"> 
-								   <p>
-									Google Analytics lets you measure your advertising ROI as well as track your Flash, video, and social networking sites and applications
+							<div class="col-md-12">
+								<p>
+									Google Analytics lets you measure your advertising ROI as well as track your Flash,
+									video, and social networking sites and applications
 								</p>
 							</div>
 
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://marketingplatform.google.com/about/analytics/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://marketingplatform.google.com/about/analytics/">Visit Website</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1281,23 +1401,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://metrica.yandex.com/about?">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/yandex metrica.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/yandex metrica.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://metrica.yandex.com/about?"><span>Yandex Metrica</span></a></div>
+								<div class="card_body_each_a"><a href="https://metrica.yandex.com/about?"><span>Yandex
+											Metrica</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									At Yandex.Metrica, security has always been our top priority. Being one of the world's most popular digital analytics systems
+									At Yandex.Metrica, security has always been our top priority. Being one of the
+									world's most popular digital analytics systems
 								</p>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://metrica.yandex.com/about?">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://metrica.yandex.com/about?">Visit Website</a></div>
 							</div>
 
 						</div>
@@ -1307,22 +1429,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.fullstory.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/fullstory.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/fullstory.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.fullstory.com/"><span>Fullstory</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.fullstory.com/"><span>Fullstory</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									FullStory's intuitive digital experience intelligence provide you with critical insights so you can drive high-impact digital improvements & revenue
+									FullStory's intuitive digital experience intelligence provide you with critical
+									insights so you can drive high-impact digital improvements & revenue
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.fullstory.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.fullstory.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1330,23 +1454,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.heap.io/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/heap.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/heap.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.heap.io/"><span>Heap Analytics</span></a></div>
+								<div class="card_body_each_a"><a href="https://www.heap.io/"><span>Heap
+											Analytics</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Heap is the only digital insights platform that gives you complete understanding of your customers'digital journeys, so you can quickly improve conversion
+									Heap is the only digital insights platform that gives you complete understanding of
+									your customers'digital journeys, so you can quickly improve conversion
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.heap.io/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.heap.io/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1356,22 +1482,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.crazyegg.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/crazy_egg.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/crazy_egg.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.crazyegg.com/"><span>Crazy Egg</span></a></div>
+								<div class="card_body_each_a"><a href="https://www.crazyegg.com/"><span>Crazy
+											Egg</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Over 300,000 websites use Crazy Egg to improve what’s working, fix what isn’t and test new ideas. Enter you website url. Show me my Heatmap
+									Over 300,000 websites use Crazy Egg to improve what’s working, fix what isn’t and
+									test new ideas. Enter you website url. Show me my Heatmap
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.crazyegg.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.crazyegg.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1389,23 +1517,27 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/pagespeed.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/pagespeed.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect"><span>Google Page Speed</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect"><span>Google
+											Page Speed</span></a></div>
 							</div>
 
-							<div class="col-md-12"> 
-								   <p>
-									Page speed is crucial to SEO. Here’s why it matters and four steps to score 100% on Google’s PageSpeed Insight tool
+							<div class="col-md-12">
+								<p>
+									Page speed is crucial to SEO. Here’s why it matters and four steps to score 100% on
+									Google’s PageSpeed Insight tool
 								</p>
 							</div>
 
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect">Visit
+										Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1413,22 +1545,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.webpagetest.org/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/catchpoint.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/catchpoint.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.webpagetest.org/"><span>Webpage Test</span></a></div>
+								<div class="card_body_each_a"><a href="https://www.webpagetest.org/"><span>Webpage
+											Test</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
-								<p>Test your user’s real experience with global locations, modern devices, and the latest browser versions
+								<p>Test your user’s real experience with global locations, modern devices, and the
+									latest browser versions
 								</p>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.webpagetest.org/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.webpagetest.org/">Visit Website</a></div>
 							</div>
 
 						</div>
@@ -1438,22 +1572,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://tools.pingdom.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/pingdom.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/pingdom.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://tools.pingdom.com/"><span>Pingdom</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://tools.pingdom.com/"><span>Pingdom</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Pingdom offers cost-effective and reliable uptime and performance monitoring for your website.
+									Pingdom offers cost-effective and reliable uptime and performance monitoring for
+									your website.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://tools.pingdom.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://tools.pingdom.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1461,23 +1597,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://gtmetrix.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/gtmetrix.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/gtmetrix.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://gtmetrix.com/"><span>Gtmetrix</span></a></div>
+								<div class="card_body_each_a"><a href="https://gtmetrix.com/"><span>Gtmetrix</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									GTmetrix was developed by Carbon60 as a tool for customers to easily test the performance of their webpages
+									GTmetrix was developed by Carbon60 as a tool for customers to easily test the
+									performance of their webpages
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://gtmetrix.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://gtmetrix.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1487,23 +1625,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.dotcom-tools.com/ping-test">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/dotcom.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/dotcom.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.dotcom-tools.com/ping-test"><span>Dotcom Tools</span></a>
+								<div class="card_body_each_a"><a
+										href="https://www.dotcom-tools.com/ping-test"><span>Dotcom Tools</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Dotcom-Tools has free website speed & performance testing tools for DNS, FTP, ping/ICMP, traceroute, and more!
+									Dotcom-Tools has free website speed & performance testing tools for DNS, FTP,
+									ping/ICMP, traceroute, and more!
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.dotcom-tools.com/ping-test">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.dotcom-tools.com/ping-test">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1511,22 +1651,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://edgemesh.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/edgmesh.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/edgmesh.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://edgemesh.com/"><span>Edgemesh</span></a></div>
+								<div class="card_body_each_a"><a href="https://edgemesh.com/"><span>Edgemesh</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									EdgeMesh, as the data plane component of the KubeEdge cluster, provides simple service discovery and traffic proxy functions for applications
+									EdgeMesh, as the data plane component of the KubeEdge cluster, provides simple
+									service discovery and traffic proxy functions for applications
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://edgemesh.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://edgemesh.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1538,28 +1680,34 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="most_head">Digital Marketing</h1>
+					<h1 class="most_head">Digital Marketing
+
+					</h1>
 				</div>
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.facebook.com/business/learn/directory?ref=ens_rdr">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/metaa.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/metaa.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.facebook.com/business/learn/directory?ref=ens_rdr"><span>Facebook</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.facebook.com/business/learn/directory?ref=ens_rdr"><span>Facebook</span></a>
+								</div>
 							</div>
 
-							<div class="col-md-12"> 
-								   <p>
-									Connect With Your Friends Online. Join The Facebook Community – Free. Share Photos And Videos, Messages And Get Updates From Your Communities
+							<div class="col-md-12">
+								<p>
+									Connect With Your Friends Online. Join The Facebook Community – Free. Share Photos
+									And Videos, Messages And Get Updates From Your Communities
 								</p>
 							</div>
 
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.facebook.com/business/learn/directory?ref=ens_rdr">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.facebook.com/business/learn/directory?ref=ens_rdr">Visit
+										Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1567,22 +1715,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://grow.google/intl/uk/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/google.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/google.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://grow.google/intl/uk/"><span>Google Digital Garage</span></a></div>
+								<div class="card_body_each_a"><a href="https://grow.google/intl/uk/"><span>Google
+											Digital Garage</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
-								<p>Google Digital Garage is a Grow with Google programme that provides free training and tools to help grow your career or business in the UK
+								<p>Google Digital Garage is a Grow with Google programme that provides free training and
+									tools to help grow your career or business in the UK
 								</p>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://grow.google/intl/uk/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://grow.google/intl/uk/">Visit Website</a></div>
 							</div>
 
 						</div>
@@ -1592,22 +1742,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="http://startupclass.samaltman.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/startupclasses.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/startupclasses.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="http://startupclass.samaltman.com/"><span>Startup Class</span></a></div>
+								<div class="card_body_each_a"><a href="http://startupclass.samaltman.com/"><span>Startup
+											Class</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Develop your business and technology skills using our vast collection of courses for entrepreneurs
+									Develop your business and technology skills using our vast collection of courses for
+									entrepreneurs
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="http://startupclass.samaltman.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="http://startupclass.samaltman.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1615,23 +1767,27 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.marketingminer.com/en/features/seo-audit">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/mmm.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/mmm.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.marketingminer.com/en/features/seo-audit"><span>Marketing miner</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.marketingminer.com/en/features/seo-audit"><span>Marketing
+											miner</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Run a comprehensive SEO audit and discover technical issues affecting your site’s ranking.
+									Run a comprehensive SEO audit and discover technical issues affecting your site’s
+									ranking.
 								</p>
-							
+
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.marketingminer.com/en/features/seo-audit">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.marketingminer.com/en/features/seo-audit">Visit Website</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1642,23 +1798,24 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.siteguru.co/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/siteguru.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/siteguru.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.siteguru.co/"><span>Siteguru</span></a>
+								<div class="card_body_each_a"><a
+										href="https://www.siteguru.co/"><span>Siteguru</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									An SEO tool that tells you how to get more traffic.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.siteguru.co/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.siteguru.co/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1666,23 +1823,23 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://rocketvalidator.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/rocketvalidator.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/rocketvalidator.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
 								<div class="card_body_each_a"><a href="https://rocketvalidator.com/"><span>
-									Rocket validator</span></a></div>
+											Rocket validator</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Find Accessibility and HTML issues in your large sites, in seconds.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://rocketvalidator.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://rocketvalidator.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1690,24 +1847,25 @@
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.omniconvert.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/omniconvert.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/omniconvert.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.omniconvert.com/"><span>Omniconvert</span></a>
+								<div class="card_body_each_a"><a
+										href="https://www.omniconvert.com/"><span>Omniconvert</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									It's the most important project for retailers. 
-Only Omniconvert solution lets you achieve this: we're pioneering the CVO movement.
+									It's the most important project for retailers.
+									Only Omniconvert solution lets you achieve this: we're pioneering the CVO movement.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.omniconvert.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.omniconvert.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1715,49 +1873,52 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.outbrain.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/outbrain.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/outbrain.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.outbrain.com/"><span>Outbrain</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.outbrain.com/"><span>Outbrain</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Outbrain is the technology company powering the discovery feeds on your favorite media.
+									Outbrain is the technology company powering the discovery feeds on your favorite
+									media.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.outbrain.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.outbrain.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				
+
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.buysellads.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/buysell.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/buysell.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
 								<div class="card_body_each_a"><a href="https://www.buysellads.com/"><span>
-									Buysellads</span></a>
+											Buysellads</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Reach technical audiences, explore unique ad placements, and run multi-channel campaigns all in one place
+									Reach technical audiences, explore unique ad placements, and run multi-channel
+									campaigns all in one place
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.buysellads.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.buysellads.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1765,21 +1926,23 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://mixpanel.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/mixpanel.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/mixpanel.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://mixpanel.com/"><span>Mixpanel</span></a></div>
+								<div class="card_body_each_a"><a href="https://mixpanel.com/"><span>Mixpanel</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
-								<p>Powerful, self-serve product analytics to help you convert, engage, and retain more users
+								<p>Powerful, self-serve product analytics to help you convert, engage, and retain more
+									users
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://mixpanel.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://mixpanel.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1787,8 +1950,7 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.heap.io/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/heap.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/heap.png" alt="">
 						</a>
 
 						<div class="card_body">
@@ -1796,14 +1958,16 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 								<div class="card_body_each_a"><a href="https://www.heap.io/"><span>Heap</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Heap is the only digital insights platform that gives you complete understanding of your customers' digital journeys
+									Heap is the only digital insights platform that gives you complete understanding of
+									your customers' digital journeys
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.heap.io/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.heap.io/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1811,48 +1975,50 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://sumo.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/sumo.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/sumo.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
 								<div class="card_body_each_a"><a href="https://sumo.com/"><span>Sumo</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Try Sumo for free today. Get proven sales and marketing strategies set up on your website in less than a minute.
+									Try Sumo for free today. Get proven sales and marketing strategies set up on your
+									website in less than a minute.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://sumo.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://sumo.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				
+
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://seositecheckup.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/seositecheckup_.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/seositecheckup_.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://seositecheckup.com/"><span>Seositecheckup</span></a>
+								<div class="card_body_each_a"><a
+										href="https://seositecheckup.com/"><span>Seositecheckup</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Search Engine Optimization Made Easy
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://seositecheckup.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://seositecheckup.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1860,22 +2026,23 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.browseo.net/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/browseo.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/browseo.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.browseo.net/"><span>Browseo</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.browseo.net/"><span>Browseo</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									BROWSEO is  allows you to view any webpage without distractions caused by styles.
+									BROWSEO is allows you to view any webpage without distractions caused by styles.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.browseo.net/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.browseo.net/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1883,23 +2050,24 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://en.ryte.com/register/free-trial/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/ryte.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/ryte.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://en.ryte.com/register/free-trial/"><span>Ryte</span></a>
+								<div class="card_body_each_a"><a
+										href="https://en.ryte.com/register/free-trial/"><span>Ryte</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Test the full feature range of Ryte - 10 days, for free
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://en.ryte.com/register/free-trial/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://en.ryte.com/register/free-trial/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1907,47 +2075,50 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://raventools.com/site-auditor/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/raven.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/raven.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://raventools.com/site-auditor/"><span>Site Auditor</span></a></div>
+								<div class="card_body_each_a"><a href="https://raventools.com/site-auditor/"><span>Site
+											Auditor</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Diagnose website issues and improve visibility to your site
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://raventools.com/site-auditor/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://raventools.com/site-auditor/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://nibbler.insites.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/nibbler.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/nibbler.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://nibbler.insites.com/"><span>Nibbler</span></a>
+								<div class="card_body_each_a"><a
+										href="https://nibbler.insites.com/"><span>Nibbler</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Free tool for testing how good your website is, and what you can do to improve it. Check accessibility, SEO, social media
+									Free tool for testing how good your website is, and what you can do to improve it.
+									Check accessibility, SEO, social media
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://nibbler.insites.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://nibbler.insites.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1955,23 +2126,26 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.levelaccess.com/tenon-retiring-faqs/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/level.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/level.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.levelaccess.com/tenon-retiring-faqs/"><span>Tenon.io</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.levelaccess.com/tenon-retiring-faqs/"><span>Tenon.io</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Important Update Level Access has acquired TenonEvery user should have equal access to your website.
+									Important Update Level Access has acquired TenonEvery user should have equal access
+									to your website.
 
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.levelaccess.com/tenon-retiring-faqs/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.levelaccess.com/tenon-retiring-faqs/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -1979,23 +2153,25 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.dareboost.com/en">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/dareboost.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/dareboost.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.dareboost.com/en"><span>Dareboost</span></a>
+								<div class="card_body_each_a"><a
+										href="https://www.dareboost.com/en"><span>Dareboost</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Dareboost has been discontinued and replaced by a new product that's part of the Contentsquare offering: Speed Analysis.
+									Dareboost has been discontinued and replaced by a new product that's part of the
+									Contentsquare offering: Speed Analysis.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.dareboost.com/en">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.dareboost.com/en">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2003,47 +2179,51 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://app.thruuu.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/thruuu.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/thruuu.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://app.thruuu.com/"><span>Thruuu</span></a></div>
+								<div class="card_body_each_a"><a href="https://app.thruuu.com/"><span>Thruuu</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									thruuu is a free SEO tool helping you with content marketing activities
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://app.thruuu.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://app.thruuu.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://marketingplatform.google.com/about/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/google_markrting.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/google_markrting.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://marketingplatform.google.com/about/"><span>Google Optimize</span></a>
+								<div class="card_body_each_a"><a
+										href="https://marketingplatform.google.com/about/"><span>Google
+											Optimize</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Engage your website visitors like never before. Create personalized experiences and run website tests — for free.
+									Engage your website visitors like never before. Create personalized experiences and
+									run website tests — for free.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://marketingplatform.google.com/about/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://marketingplatform.google.com/about/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2051,23 +2231,24 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://metrica.yandex.com/about">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/yandex metrica.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/yandex metrica.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://metrica.yandex.com/about"><span>Yandex Metrica</span></a></div>
+								<div class="card_body_each_a"><a href="https://metrica.yandex.com/about"><span>Yandex
+											Metrica</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									From traffic trends to mouse movements 
-									get a comprehensive 
+									From traffic trends to mouse movements
+									get a comprehensive
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://metrica.yandex.com/about">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://metrica.yandex.com/about">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2075,23 +2256,25 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.fullstory.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/fullstory.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/fullstory.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.fullstory.com/"><span>Fullstory</span></a>
+								<div class="card_body_each_a"><a
+										href="https://www.fullstory.com/"><span>Fullstory</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									FullStory's intuitive digital experience intelligence provide you with critical insights so you can drive high-impact digital improvements & revenue.
+									FullStory's intuitive digital experience intelligence provide you with critical
+									insights so you can drive high-impact digital improvements & revenue.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.fullstory.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.fullstory.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2099,48 +2282,51 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.hotjar.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/hotjar.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/hotjar.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.hotjar.com/"><span>Hotjar</span></a></div>
+								<div class="card_body_each_a"><a href="https://www.hotjar.com/"><span>Hotjar</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Numbers tell you what's happening. Hotjar's visual insights tell you why. So you can make the changes that matter
+									Numbers tell you what's happening. Hotjar's visual insights tell you why. So you can
+									make the changes that matter
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.hotjar.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.hotjar.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
+
 
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.similarweb.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/similarweb.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/similarweb.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.similarweb.com/"><span>Similar Web</span></a>
+								<div class="card_body_each_a"><a href="https://www.similarweb.com/"><span>Similar
+											Web</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Access behind-the-scenes analytics for every site online.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.similarweb.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.similarweb.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2148,22 +2334,24 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://serpstat.com/?ref=1231106">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/serpstat.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/serpstat.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://serpstat.com/?ref=1231106"><span>Serpstat</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://serpstat.com/?ref=1231106"><span>Serpstat</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Serpstat Website SEO Checker Allows to Find Key Metrics of Any Site in Just Few Click.
+									Serpstat Website SEO Checker Allows to Find Key Metrics of Any Site in Just Few
+									Click.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://serpstat.com/?ref=1231106">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://serpstat.com/?ref=1231106">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2171,23 +2359,24 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://keywordchef.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/keywordchef.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/keywordchef.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://keywordchef.com/"><span>Keyword Chef</span></a>
+								<div class="card_body_each_a"><a href="https://keywordchef.com/"><span>Keyword
+											Chef</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									Keyword Chef automatically finds and filters keywords for you.
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://keywordchef.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://keywordchef.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2195,48 +2384,49 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://mangools.com/serpchecker/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/mangools.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/mangools.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://mangools.com/serpchecker/"><span>Serp checker</span></a></div>
+								<div class="card_body_each_a"><a href="https://mangools.com/serpchecker/"><span>Serp
+											checker</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Serp checker  helps you find the weak spots of your competitors
+									Serp checker helps you find the weak spots of your competitors
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://mangools.com/serpchecker/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://mangools.com/serpchecker/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
+
 
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://mangools.com/kwfinder/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/mangokwfinder.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/mangokwfinder.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
 								<div class="card_body_each_a"><a href="https://mangools.com/kwfinder/"><span>KW Finder
-								</span></a>
+										</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
 									KWFinder is the only keyword research tool in the universe you will ever need.
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://mangools.com/kwfinder/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://mangools.com/kwfinder/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2244,22 +2434,24 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://neilpatel.com/ubersuggest/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/ubersuggest.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/ubersuggest.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://neilpatel.com/ubersuggest/"><span>Ubbersuggest</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://neilpatel.com/ubersuggest/"><span>Ubbersuggest</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Ubersuggest allows you to get insight into the strategies that are working for others in your market
+									Ubersuggest allows you to get insight into the strategies that are working for
+									others in your market
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://neilpatel.com/ubersuggest/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://neilpatel.com/ubersuggest/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2267,23 +2459,25 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.keywordeye.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/keywordeye.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/keywordeye.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.keywordeye.com/"><span>Keyword Eye</span></a>
+								<div class="card_body_each_a"><a href="https://www.keywordeye.com/"><span>Keyword
+											Eye</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Keyword Eye is a suite of affordable, fast, no-nonsense visual keyword and competitor research tools
+									Keyword Eye is a suite of affordable, fast, no-nonsense visual keyword and
+									competitor research tools
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.keywordeye.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.keywordeye.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2291,46 +2485,52 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.algolia.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/algolia.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/algolia.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.algolia.com/"><span>Algolia</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.algolia.com/"><span>Algolia</span></a></div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Algolia is the leader in globally scalable, secure, digital experiences that are ultrafast and reliable
+									Algolia is the leader in globally scalable, secure, digital experiences that are
+									ultrafast and reliable
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.algolia.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.algolia.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://marketingplatform.google.com/about/tag-manager/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/google_markrting.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/google_markrting.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://marketingplatform.google.com/about/tag-manager/"><span>Edgemesh</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://marketingplatform.google.com/about/tag-manager/"><span>Edgemesh</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									EdgeMesh, as the data plane component of the KubeEdge cluster, provides simple service discovery and traffic proxy functions for applications
+									EdgeMesh, as the data plane component of the KubeEdge cluster, provides simple
+									service discovery and traffic proxy functions for applications
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://marketingplatform.google.com/about/tag-manager/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://marketingplatform.google.com/about/tag-manager/">Visit Website</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -2338,23 +2538,25 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://sitecheck.sucuri.net/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/sucuri.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/sucuri.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://sitecheck.sucuri.net/"><span>Securi Sitecheck</span></a>
+								<div class="card_body_each_a"><a href="https://sitecheck.sucuri.net/"><span>Securi
+											Sitecheck</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									he SiteCheck scanner remotely checks any URL for security threats, malware, defacements, out-of-date CMS, blacklisting
+									he SiteCheck scanner remotely checks any URL for security threats, malware,
+									defacements, out-of-date CMS, blacklisting
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://sitecheck.sucuri.net/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://sitecheck.sucuri.net/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2362,22 +2564,25 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://www.webfx.com/tools/wikigrabber/">
-							<img sizes="(max-width: 550px) 100vw, 550px"
-							src="./images/webfx.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/webfx.png" alt="">
 						</a>
 
 						<div class="card_body">
 							<div class="card_body_each">
-								<div class="card_body_each_a"><a href="https://www.webfx.com/tools/wikigrabber/"><span>Wiki Grabber</span></a></div>
+								<div class="card_body_each_a"><a
+										href="https://www.webfx.com/tools/wikigrabber/"><span>Wiki Grabber</span></a>
+								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Build valuable backlinks fast with this free wiki grabber tool, which finds Wikipedia pages that have dead or broken links and need replaced
+									Build valuable backlinks fast with this free wiki grabber tool, which finds
+									Wikipedia pages that have dead or broken links and need replaced
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://www.webfx.com/tools/wikigrabber/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://www.webfx.com/tools/wikigrabber/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2385,8 +2590,7 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 				<div class="col-sx-3 col-sm-4 col-md-3">
 					<div class="card col-md-12">
 						<a href="https://uptime.com/">
-							<img sizes="(max-width: 550px) 100vw, 550px" 
-							src="./images/uptime.png" alt="">
+							<img sizes="(max-width: 550px) 100vw, 550px" src="./images/uptime.png" alt="">
 						</a>
 
 						<div class="card_body">
@@ -2394,14 +2598,16 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 								<div class="card_body_each_a"><a href="https://uptime.com/"><span>Uptime</span></a>
 								</div>
 							</div>
-							
+
 							<div class="col-md-12">
 								<p>
-									Top-rated website monitoring for thousands of businesses to check downtime, optimize site speed, and improve domain health
+									Top-rated website monitoring for thousands of businesses to check downtime, optimize
+									site speed, and improve domain health
 								</p>
 							</div>
 							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w" href="https://uptime.com/">Visit Website</a></div>
+								<div class="col-md-12 col-sm-12 text-center"><a class="btn_visit_w"
+										href="https://uptime.com/">Visit Website</a></div>
 							</div>
 						</div>
 					</div>
@@ -2409,11 +2615,11 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 
 
 
-			
+
 			</div>
 		</div>
 	</section>
-    
+
 
 
 	<section class="popular_categories">
@@ -2549,89 +2755,90 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 		</div>
 	</section>
 
-	
 
-	
 
-<footer class="footer has-cards">
+
+
+	<footer class="footer has-cards">
 		<div class="container">
 			<div class="content f-menu py-5">
-					<div class="row justify-content-center">
-					  <div class="col-md-4">
+				<div class="row justify-content-center">
+					<div class="col-md-4">
 						<div class="column">
-						  <h3 class="f-h3">
-							  Your one-stop destination for all resource needs.
+							<h3 class="f-h3">
+								Unlocking a World of Resources Your Comprehensive Destination
 							</h3>
 						</div>
-					  </div>
-					  <div class="col-md-3 col-6">
-						<div class="column">
-						  <h4>SITEMAP</h4>
-						  <ul>
-							<li>
-							  <a href="">
-								Suggest Resource
-							  </a>
-							</li>
-							<li>
-							  <a href="./aboutus.html">
-								About
-							  </a>
-							</li>
-							 <li>
-							  <a href="">
-								Blog
-							  </a>
-							</li>
-							<li>
-							  <a href="">
-								FAQ
-							  </a>
-							</li>
-							  <li>
-							  <a href="./contactus.html">
-								Contact
-							  </a>
-							</li>
-						  </ul>
-						</div>
-					  </div>
-
-					  <div class="col-md-3 col-6">
-						<div class="column">
-						  <h4>LEGAL</h4>
-						  <ul>
-							<li>
-							  <a href="">
-								Terms of Use
-							  </a>
-							</li>
-							<li>
-							  <a href="">
-								Privacy Policy
-							  </a>
-							</li>
-						  </ul>
-						</div>
-					  </div>
 					</div>
-				
-				  </div>
-			
-	<div class="footer-hr mb-4 mt-2">
-		<div class="col-md-12 d-flex justify-content-between">
-			<div class="col-md-6 copyright">
-			  <a href="./" class="font-weight-bold ml-1" target="_blank"><img style="height: 60px;" src="./images/tech_logo.png" alt="">
-			</a> 
+					<div class="col-md-3 col-6">
+						<div class="column">
+							<h4>SITEMAP</h4>
+							<ul>
+								<li>
+									<a href="">
+										Suggest Resource
+									</a>
+								</li>
+								<li>
+									<a href="./aboutus.html">
+										About
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Blog
+									</a>
+								</li>
+								<li>
+									<a href="">
+										FAQ
+									</a>
+								</li>
+								<li>
+									<a href="./contactus.html">
+										Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-6">
+						<div class="column">
+							<h4>LEGAL</h4>
+							<ul>
+								<li>
+									<a href="">
+										Terms of Use
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Privacy Policy
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
 			</div>
-			<div class="col-md-6 d-flex justify-content-end" style=" color: #fff; font-weight: 700;">
-				  Copyright©2023 
-			</div>
-		  </div>
+
+			<div class="footer-hr mb-4 mt-2">
+				<div class="col-md-12 d-flex justify-content-between">
+					<div class="col-md-6 copyright">
+						<a href="./" class="font-weight-bold ml-1" target="_blank"><img style="height: 60px;"
+								src="./images/tech_logo.png" alt="">
+						</a>
+					</div>
+					<div class="col-md-6 d-flex justify-content-end" style=" color: #fff; font-weight: 700;">
+						Copyright©2023
+					</div>
+				</div>
 
 
-	</div>
-		  <!-- <div class="fbottom-footer row align-items-center justify-content-md-between">
+			</div>
+			<!-- <div class="fbottom-footer row align-items-center justify-content-md-between">
 			<div class="col-md-6">
 			  <div class="copyright">
 				<a href="./" class="font-weight-bold ml-1" target="_blank"><img style="height: 60px;" src="./images/tech_logo.png" alt=""></a> © 2023 <a target="_blank" href="">
@@ -2658,36 +2865,36 @@ Only Omniconvert solution lets you achieve this: we're pioneering the CVO moveme
 			</div>
 		  </div> -->
 		</div>
-</footer>
+	</footer>
 
-<script>
-	function sndFX_click(){
-    var audio = document.createElement("audio");
-    audio.src = "http://www.soundjay.com/misc/sounds/briefcase-lock-6.mp3";
-    audio.addEventListener("ended", function () {
-        document.removeChild(this);
-    }, false);
-    audio.play();   
-}
-//http://www.soundjay.com/misc/sounds/handbag-lock-4.mp3
+	<script>
+		function sndFX_click() {
+			var audio = document.createElement("audio");
+			audio.src = "http://www.soundjay.com/misc/sounds/briefcase-lock-6.mp3";
+			audio.addEventListener("ended", function () {
+				document.removeChild(this);
+			}, false);
+			audio.play();
+		}
+		//http://www.soundjay.com/misc/sounds/handbag-lock-4.mp3
 
-$('#makeNoise').bind("click",function() {
-sndFX_click();
-}); 
+		$('#makeNoise').bind("click", function () {
+			sndFX_click();
+		});
 
 
-/*
-$('#sndFXtrig').bind("click",function() {
-sndFX_click();
-});
-
-$("#makeNoise").click(function(){
-$("#sndFXtrig").click();
-});
-
-$("#makeNoise").click();
-*/
-</script>
+		/*
+		$('#sndFXtrig').bind("click",function() {
+		sndFX_click();
+		});
+		
+		$("#makeNoise").click(function(){
+		$("#sndFXtrig").click();
+		});
+		
+		$("#makeNoise").click();
+		*/
+	</script>
 </body>
 
 </html>
