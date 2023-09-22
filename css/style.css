@@ -855,5 +855,15 @@ overflow-x: hidden;
 
 }
 
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-image: linear-gradient(120deg, #4373b9 , #3eba80) !important;
+}
+.nav-pills .nav-link{
+  color: #036;
+}
 
-
+.bg_tech_grn{
+  background-image: url('../images/bg_tech_gren.png');
+  background: no-repeat;
+  background-position: left;
+}
