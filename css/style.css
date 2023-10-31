@@ -783,6 +783,10 @@ a{
 
 @media(min-width:360px) and (max-width: 556px){
 header{display: none !important;}
+.category_list li{
+  width: 100%;
+
+}
 .tech_banner{
   padding: 20px 0 !important;
 }
