@@ -781,8 +781,33 @@ a{
   }
 }
 
+.content{
+  display: none;
+}
 @media(min-width:360px) and (max-width: 556px){
 header{display: none !important;}
+/* .collap{
+  position: fixed;
+  margin-bottom: 50px;
+  z-index: 1 !important;
+} */
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  text-align: center;
+  display: block;
+}
+.mob_nav {
+  display: none;
+}
+
+.mb_nve{
+  position: fixed;
+  z-index: 1 !important;
+}
 .category_list li{
   width: 100%;
 
@@ -872,3 +897,38 @@ overflow-x: hidden;
   background: no-repeat;
   background-position: left;
 }
+
+
+
+/* mob nav bar */
+
+.collapsible {
+  background-color: #fff;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* .active, .collapsible:hover {
+  background-color: #555;
+} */
+
+.collapsible:after {
+  content: url(../images/grn_menu.svg);
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  /* content: url(../images/close_x.svg); */
+  /* content: "\2212"; */
+}
+
+

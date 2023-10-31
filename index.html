@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreeTechResourse</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png"/>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -59,8 +61,51 @@
         </div>
       </div>
     </header>
+	<button class="collapsible collap d-sm-block d-md-none">
+		<img height="50px" src="./images/tech_logo.png" alt="">
+	</button>
+<div class="content">
+	<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		<li class="nav-item ">
+		  <a class="nav-link" href="./index.html">Home </a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link " href="./aboutus.html">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link " href="./contactus.html">Contact Us</a>
+		  </li><li class="nav-item">
+			<a class="nav-link " href="./services.html">Services</a>
+		  </li>
+	  </ul>
 
-    <div class="mob_nav d-sm-block d-md-none">
+</div>
+
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+		  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+		  </ul>
+		</div>
+	  </nav> -->
+
+    <div class="collapse mb_nve" id="navbarToggleExternalContent2">
+        <ul class="bg-light shadow-3 py-2 px-3">
+            <li class="btn btn-link btn-block m-0 p-2 text-start text-dark">home</li>
+            <li class="btn btn-link btn-block m-0 p-2 text-start text-dark">Features</li>
+            <li class="btn btn-link btn-block m-0 p-2 text-start text-dark">Pricing</li>
+        </ul>
+    </div>
+    
+    <div class="mob_nav d-sm-none d-md-none">
       <a href="./index.html">
         <img style="height: 50px" src="./images/tech_logo.png" alt="logo"/>
       </a>
@@ -86,15 +131,16 @@
         </svg>
 
         <ul id="demo" class="collapse menu_items">
-          <li><a  href="./index.html">HOME</a></li>
-          <li><a  href="./aboutus.html">ABOUT</a></li>
-          <li><a href="./contactus.html">CONTACT US</a></li>
-          <li><a href="./services.html">SERVICE</a></li>
+          <li><a  href="index.html">HOME</a></li>
+          <li><a  href="aboutus.html">ABOUT</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          <li><a href="services.html">SERVICE</a></li>
         </ul>
       </span>
 
       <div></div>
     </div>
+
 	<section class="tech_banner d-none d-sm-block">
 		<div class="container">
 			<h1 class="text-center">
@@ -3321,6 +3367,23 @@ your research.
         </div>
       </div>
     </footer>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
   </body>
 </html>

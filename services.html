@@ -58,6 +58,24 @@
         </div>
       </div>
     </header>
+    <button class="collapsible collap d-sm-block d-md-none">
+      <img height="50px" src="./images/tech_logo.png" alt="">
+    </button>
+  <div class="content">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item ">
+        <a class="nav-link" href="./index.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="./aboutus.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="./contactus.html">Contact Us</a>
+        </li><li class="nav-item">
+        <a class="nav-link " href="./services.html">Services</a>
+        </li>
+      </ul>
+  </div>
 
     <div class="mob_nav d-sm-block d-md-none">
       <a href="./index.html"
@@ -270,5 +288,22 @@
         </div>
       </div>
     </footer>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+        });
+      }
+      </script>
+
   </body>
 </html>
