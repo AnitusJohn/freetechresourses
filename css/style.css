@@ -8,7 +8,11 @@
 img{
   width: 100%;
 }
-
+.cpy_rights{
+  color: #fff;
+  margin-top: 50px !important;
+  width: 100% !important;
+}
 /* icon */
 
 
@@ -793,6 +797,9 @@ header{display: none !important;}
   margin-bottom: 50px;
   z-index: 1 !important;
 } */
+.sec-title{
+  margin-top: 70px;
+}
 .content {
   padding: 0 18px;
   max-height: 0;
