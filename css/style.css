@@ -798,6 +798,15 @@ header{display: none !important;}
   margin-bottom: 50px;
   z-index: 1 !important;
 } */
+.about-section{
+  top: 0 !important;
+}
+.profile {
+  margin-top: 20px;
+}
+.contact_info_sec{
+  margin-bottom: 20px;
+}
 .sec-title{
   margin-top: 70px;
 }
