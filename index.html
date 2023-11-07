@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreeTechResourse</title>
     <link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/slidee.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png"/>
 <link rel="stylesheet" href="./css/slide.css">
 <!-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"> -->
@@ -30,6 +31,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
    
+
+
+	
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet" />
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
 	<style>
         body
         {
@@ -329,8 +342,37 @@
 	
     <svg class="d-none d-sm-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#03a9f40f" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,85.3C480,96,600,160,720,165.3C840,171,960,117,1080,85.3C1200,53,1320,43,1380,37.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
 
-
-	<section class=" d-md-none d-sm-block">
+	<section class="slider d-md-none d-sm-block">
+        <ul>
+            <li>
+                <article class="center-y padding_2x">
+                    <h3 class="big title"><em>O</em>ccupational <em>H</em>ealth</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>	
+                    <a href="#about" class="btn btn_3">More about us</a>
+                </article>
+            </li>
+            <li>
+                <article class="center-y padding_2x">
+                    <h3 class="big title"><em>Fire Fighting</em> Spill Response.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>	
+                    <a href="#" class="btn btn_3">View Issues</a>
+                </article>
+            </li>
+          <li>
+                <article class="center-y padding_2x">
+                    <h3 class="big title"><em>Fire Fighting</em> Spill Response.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>	
+                    <a href="#" class="btn btn_3">View Issues</a>
+                </article>
+            </li>
+            <aside>
+                <a href="#"></a>
+                <a href="#"></a>
+              <a href="#"></a>
+            </aside>
+        </ul>
+    </section>
+	<!-- <section class=" d-md-none d-sm-block">
 
 		<div class="container-fluid slid_rel">
 			<div id="containerSlider">
@@ -340,21 +382,8 @@
                 <div id="slidingImage"> <img src="./images/slide_4.jpg" alt="image4"> </div>
             </div>
 			<h1 class="slide_banner_text">Find a largest Technology Website In One Place</h1>
-			<!-- <div id="slideshow">
-				<div class="slide-wrapper">
-				  <div class="slide"><img class="slide-number" src="./images/slide_1.jpg" alt=""></div>
-				  <div class="slide"><img class="slide-number" src="./images/slide_2.jpg" alt=""></div>
-				  <div class="slide"><img class="slide-number" src="./images/slide_3.jpg" alt=""></div>
-				  <div class="slide"><img class="slide-number" src="./images/slide_4.jpg" alt=""></div>
-				  <div class="slide"><img class="slide-number" src="./images/slide_5.jpg" alt=""></div>
-				  <div class="slide"><img class="slide-number" src="./images/slide_2.jpg" alt=""></div>
-<h1 class="text-center">welcome		</h1>
-				</div>
-			  </div> -->
-			  
-			
 		</div>
-	</section>
+	</section> -->
 	<section class="most_view">
 		<div class="container">
 			<h1 class="text-center">category</h1>
@@ -3483,4 +3512,69 @@ for (i = 0; i < coll.length; i++) {
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
+
+<script>{
+	class SliderClip {
+	  constructor(el) {
+		this.el = el;
+		this.Slides = Array.from(this.el.querySelectorAll('li'));
+		this.Nav = Array.from(this.el.querySelectorAll('aside a'));
+		this.totalSlides = this.Slides.length;
+		this.current = 0;
+		this.autoPlay = true; //true or false
+		this.timeTrans = 4000; //transition time in milliseconds
+		this.IndexElements = [];
+  
+		for (let i = 0; i < this.totalSlides; i++) {
+		  this.IndexElements.push(i);
+		}
+  
+		this.setCurret();
+		this.initEvents();
+	  }
+	  setCurret() {
+		this.Slides[this.current].classList.add('current');
+		this.Nav[this.current].classList.add('current_dot');
+	  }
+	  initEvents() {
+		const self = this;
+  
+		this.Nav.forEach(dot => {
+		  dot.addEventListener('click', ele => {
+			ele.preventDefault();
+			this.changeSlide(this.Nav.indexOf(dot));
+		  });
+		});
+  
+		this.el.addEventListener('mouseenter', () => self.autoPlay = false);
+		this.el.addEventListener('mouseleave', () => self.autoPlay = true);
+  
+		setInterval(function () {
+		  if (self.autoPlay) {
+			self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
+			self.changeSlide(self.current);
+		  }
+		}, this.timeTrans);
+  
+	  }
+	  changeSlide(index) {
+  
+		this.Nav.forEach(allDot => allDot.classList.remove('current_dot'));
+  
+		this.Slides.forEach(allSlides => allSlides.classList.remove('prev', 'current'));
+  
+		const getAllPrev = value => value < index;
+  
+		const prevElements = this.IndexElements.filter(getAllPrev);
+  
+		prevElements.forEach(indexPrevEle => this.Slides[indexPrevEle].classList.add('prev'));
+  
+		this.Slides[index].classList.add('current');
+		this.Nav[index].classList.add('current_dot');
+	  }}
+  
+  
+	const slider = new SliderClip(document.querySelector('.slider'));
+  }
+  </script>
 </html>
