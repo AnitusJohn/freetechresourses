@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contact_Us</title>
-	<link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 	<link rel="icon" type="image/x-icon" href="./images/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="./js/script.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="./css/email.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  	
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+  <!-- <script src="./script/email.js"></script> -->
+	
 </head>
-
 <body>
+    <style>
+		
+		.error {
+		  color: red;
+		}
+	
+	  </style>
 	<style>
 		/* body{
   color:#fff
@@ -26,7 +40,9 @@
     background-color: #f1f1f1;
     padding: 120px 0px;
 }
-
+.contact_info_sec{
+	color: #fff !important;
+}
 .contact_inner{
     background-color: #fff;
     position: relative;
@@ -185,7 +201,8 @@ button.contact_form_submit {
 	
 
 	<div class="mob_nav d-sm-block d-md-none">
-		<a href="#"><img style=" height: 50px;" src="./images/tech_logo.png" alt="logo">
+		
+        <a href="#"><img style=" height: 50px;" src="./images/tech_logo.png" alt="logo">
 		</a>
 		
 		<span type="" class=""style="float: right; cursor: pointer; width:50%;"  data-bs-toggle="collapse" data-bs-target="#demo">
@@ -197,78 +214,60 @@ button.contact_form_submit {
 					  <li><a id="makeNoise" href="./aboutus.html">ABOUT</a></li>
 					  <li><a href="https://www.jeevisoft.com/contact/">CONTACT US</a></li>
 					  <li><a href="https://www.jeevisoft.com/services/">SERVICE</a></li>
-
 					</ul>
 			</span>
 		<div>
 		</div>
 	</div>
-				
-	<!-- <section class="contact_us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="contact_inner">
-                        <div class="row">
-                            <div class="col-md-10">
-                                <div class="contact_form_inner">
-                                    <div class="contact_field">
-                                        <h3>Contatc Us</h3>
-                                        <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
-									
-										<br>
-										<br>
-										<br>
-										<br>
-										<br>
-										<br>
-										<br>
-										<br>
-									
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="right_conatct_social_icon d-flex align-items-end">
-                                   <div class="socil_item_inner d-flex">
-                                      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact_info_sec">
-                            <h4>Contact Info</h4>
-                            <div class="d-flex info_single align-items-center">
-                                <i class="fas fa-headset"></i>
-								<h5>Phone:</h5>
-                                <span>+91 9994051212</span>
-                            </div>
-                            <div class="d-flex info_single align-items-center">
-                                <i class="fas fa-envelope-open-text"></i>
-								<h5>Mail:</h5>
-                                <span>hello@jeevisoft.com</span>
-                            </div>
-                            <div class="d-flex info_single align-items-center">
-                                <i class="fas fa-map-marked-alt"></i>
-                             
-                            </div>
-            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-	<section>
-		<div class="container">
+    <section>
+
+        <div class="container">
 			<div class="row">
+				
 				<div class="col-md-6">
 					<img src="./images/contactus_.png" alt="">
 				</div>
-				<div class="col-md-6">
+
+				<div class="col-md-6 text-center">
+					<div class="container_r">
+						<h1>Get in Touch</h1>
+
+    <!-- action="https://formsubmit.co/f5f9743d88024fb28376549f703d7815" method="POST" -->
+         <form id="contactForm"  action="https://formsubmit.co/f5f9743d88024fb28376549f703d7815" method="POST">
+							<!-- <label for="name">Name:</label> -->
+							<input type="text" id="name" name="name" placeholder="Name" required>
+							<span id="nameError" class="error"></span><br>
+						
+							<!-- <label for="email">Email:</label> -->
+							<input type="email" id="email" name="email" placeholder="Mail ID" required>
+							<span id="emailError" class="error"></span><br>
+						
+							<!-- <label for="number">phone:</label> -->
+							<input type="tel" id="number" name="number" maxlength="10" pattern="[0-9]{10}" placeholder="Phone Number" required/>
+							<span id="numberError" class="error"></span><br>
+						<br>
+						
+							<!-- <label for="message">Message:</label> -->
+							<textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+							<span id="messageError" class="error"></span><br>
+							<input type="submit" class="btn" value="Submit" onclick="validateForm()">
+						<!-- <button type="button" class="btn" value="Submit" onclick="validateForm()">Submit</button> -->
+						
+                    </form>
+
+					<!-- <form onsubmit="emailSend(); reset(); return false;">
+						<input type="text" id="name" placeholder="name" name="name" required>
+						<input type="text" id="phone" placeholder="phone" name="phone" required>
+						<input type="email" id="email" placeholder="email" name="email" required>
+						<textarea id="message" name="message" rows="4" required></textarea>
+						<button type="submit" class="btn">submit</button>
+					</form> -->
+
+				</div>
+				 </div>
+
+				<!-- <div class="col-md-6">
 					<div class="contact_info_sec">
 						<h4>Contact Info</h4>
 						<div class="d-flex info_single align-items-center">
@@ -283,110 +282,29 @@ button.contact_form_submit {
 						</div>
 						<div class="d-flex info_single align-items-center">
 							<i class="fas fa-map-marked-alt"></i>
-							<!-- <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span> -->
+							
 						</div>
 		
 					</div>
 					
-				</div>
-			</div>
+				</div> -->
+			
+                <!-- <form action="https://formsubmit.co/bee8400edbada5ef2332417e43ba9431 " method="POST">
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <button type="submit">Send</button>
+               </form> -->
+
+            </div>
 		</div>
+
 	</section>
-    
-    <!-- <section class="map_sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="map_inner">
-                        <h4>Find Us on Google Map</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
-                        <div class="map_bind">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
-  
-
-<!-- <section class="contactus">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-6">
-                    <h1>Leave Us Your Info</h1>
-                    <p>We'd Love To Hear From You! Whether You Have A Question About Our Services, A Suggestion For How We Can Improve, Or Just Want To Say Hello, There Are Several Ways You Can Get In Touch With Us.
-
-                        Please Fill Out The Form To Get In Touch With Us. We'll Do Our Best To Respond To Your Inquiry Within 24 Hours.
-                        
-                        Thank You For Your Interest In Our Services. We Look Forward To Hearing From You Soon!</p>
-                       
-                       <div> Phone:
-                        <a href="">+91 9994051212</a>
-                       </div> 
-                       <div> Mail:
-                        <a href="">hello@jeevisoft.com</a>
-                       </div>
-                </div>
-                <div class="col-md-6">
-                    <img style="width: 100%;" src="./images/contact-us-2993000_1280.jpg" alt="">
-                </div>
-
-            </div>
-        </div>
-</section> -->
 
 
 <footer class="footer has-cards">
 	<div class="container">
-	  <!-- <div class="content f-menu py-5">
-		<div class="row justify-content-center">
-		  <div class="col-md-4">
-			<div class="column">
-			  <h3 class="f-h3">
-				Your one-stop destination for all resource needs.
-			  </h3>
-			</div>
-		  </div>
-		  <div class="col-md-3 col-6">
-			<div class="column">
-			  <h4>SITEMAP</h4>
-			  <ul>
-				<li>
-				  <a href=""> Suggest Resource </a>
-				</li>
-				<li>
-				  <a href="./aboutus.html"> About </a>
-				</li>
-				<li>
-				  <a href=""> Blog </a>
-				</li>
-				<li>
-				  <a href=""> FAQ </a>
-				</li>
-				<li>
-				  <a href="./contactus.html"> Contact </a>
-				</li>
-			  </ul>
-			</div>
-		  </div>
-		  <div class="col-md-3 col-6">
-			<div class="column">
-			  <h4>LEGAL</h4>
-			  <ul>
-				<li>
-				  <a href=""> Terms of Use </a>
-				</li>
-				<li>
-				  <a href=""> Privacy Policy </a>
-				</li>
-			  </ul>
-			</div>
-		  </div>
-		</div>
-	  </div> -->
-
+	
 	  <div class="footer-hr mb-4 mt-2"></div>
 	  <div
 		class="fbottom-footer row align-items-center justify-content-md-between"
@@ -483,6 +401,7 @@ button.contact_form_submit {
 	  </div>
 	</div>
   </footer>
+  
 
 <script>
 	var coll = document.getElementsByClassName("collapsible");
@@ -499,9 +418,80 @@ button.contact_form_submit {
 		} 
 	  });
 	}
-	
+
 	</script>
+
+
+    <script>
+        
+function validateForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var number = document.getElementById('number').value;
+  var message = document.getElementById('message').value;
+
+  var nameError = document.getElementById('nameError');
+  var emailError = document.getElementById('emailError');
+  var numberError = document.getElementById('numberError');
+  var messageError = document.getElementById('messageError');
+
+
+  // Reset errors
+  nameError.innerHTML = "";
+  emailError.innerHTML = "";
+  numberError.innerHTML = "";
+  messageError.innerHTML = "";
+
+  
+  // Name validation
+  if (name.trim() === "") {
+    nameError.innerHTML = "Name is required";
+    swal("Error", "Please Enter Your Name", "error");
+  
+    return;
+  }
+
+
+  // Email validation
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    emailError.innerHTML = "Invalid email address";
+    swal("Error", "Please Enter Your Valid Email Address", "error");
+    return;
+  }
+
+  var phonePattern = /^(\d{10}|\d{3}[-\s]\d{3}[-\s]\d{4}|\(\d{3}\)[-\s]\d{3}[-\s]\d{4})$/;
+
+  if (!phonePattern.test(number)) {
+    numberError.innerHTML = "Invalid phone number address";
+    swal("Error", "Please Enter a Valid Phone Number", "error");
+
+    return;
+  }
+  // Message validation
+  if (message.trim() === "") {
+    messageError.innerHTML = "Message is required";
+    swal("Error", "Please Text Purpose Of Contact", "error");
+
+    return;
+  }
+  
+  // If all validations pass, send the email
+//   sendEmail(name, email,number,message);
+}
+
+// swal("Secussful", "Your message has been sent successfully", "success");
+
+// $("button").click(function() {
+//   swal("Success Message Title", "Well done, you pressed a button", "success")
+// });
+
+
+</script>
+
+
+
+
 
 </body>
 </html>
-

@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif ; */
   /* overflow-x: hidden; */
 }
-
+.copyright{
+  float: left;
+}
 img{
   width: 100%;
 }
@@ -23,7 +26,7 @@ a{
  text-decoration: none;
 }
 body{
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
 }
 /* relevant code for the icons starts here */
 
@@ -739,10 +742,12 @@ ol {
 a{
   display: inline-block;
 }
+
 .footer {
   float: left;
   width: 100%;
   padding: 60px 0;
+  text-align: center;
   background-color: #131313;
 }
 
@@ -791,7 +796,36 @@ a{
 .content{
   display: none;
 }
+.nav-link{
+float: left;
+}
 @media(min-width:360px) and (max-width: 556px){
+  .about-section{
+    /* padding: 0; */
+  }
+  .sec-title h2{
+    font-size: 20px;
+  }
+  .about-section .sec-title{
+    margin-bottom: 13px;
+  }
+  .about-section .content-column{
+    margin: 0;
+  }
+  
+  .btn-box a{
+    padding: 5px 10px !important;
+  }
+  .copyright{
+    text-align: center;
+width: 100%;
+  }
+  .wid_hlf{
+    width: 50% !important;
+  }
+  .category_list{
+    display: none !important;
+  }
 header{display: none !important;}
 /* .collap{
   position: fixed;
@@ -801,12 +835,16 @@ header{display: none !important;}
 .about-section{
   top: 0 !important;
 }
+
 .profile {
   margin-top: 20px;
 }
+
 .contact_info_sec{
   margin-bottom: 20px;
+ color: #fff !important;
 }
+
 .sec-title{
   margin-top: 70px;
 }
@@ -949,5 +987,17 @@ overflow-x: hidden;
   /* content: url(../images/close_x.svg); */
   /* content: "\2212"; */
 }
+/* .mbl_a li{
+  width: 500px;
+}
+.mbl_a a{
+  float: right;
 
+} */
 
+.info_single span{
+  font-size: 18px !important;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  color: #fff;
+}

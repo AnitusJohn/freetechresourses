@@ -1,19 +1,4 @@
-/*
- * CSS Fadeshow by @alexerlandsson
- * This is a fadeshow built in CSS and with customization in focus.
- * Supports quick navigation, prev/next navigation and autoplay.
- * 
- * For better documentation and implementation guide, check out the GitHub repository:
- * https://github.com/alexerlandsson/css-fadeshow
-*/
 
-
-/*
- * ===== VARIABLES =====
- *
- * Change these variables to match your preferences. For a more detailed
- * description of what each variable do, visit https://github.com/alexerlandsson/css-fadeshow
- */
 
  $max-slides:					5;
  $prefix:							true;
@@ -33,14 +18,6 @@
  $fade-color:					#fff;
  $autoplay:						true;
  $autoplay-duration:			3;
- 
- 
- /*
-  * ===== MIXINS =====
-  *
-  * This section contains mixin used
-  * Do not change anything here unless you know what you are doing.
-  */
  
  /* Mixins to handle prefixes */
  

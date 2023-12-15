@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+ <style>
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .error {
+      color: red;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h2>Contact Us</h2>
+
+  <form id="contactForm">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <span id="nameError" class="error"></span><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error"></span><br>
+
+    <label for="number">phone:</label>
+    <input type="tel" id="number" name="number" maxlength="10" pattern="[0-9]{10}" required/>
+    <span id="numberError" class="error"></span><br>
+    
+<br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <span id="messageError" class="error"></span><br>
+    <input type="button" value="Submit" onclick="validateForm()">
+
+  </form>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
+
+  <script>
+
+    emailjs.init("hDbdVIiECLtHrBj-p");
+
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var number = document.getElementById('number').value;
+      var message = document.getElementById('message').value;
+
+      var nameError = document.getElementById('nameError');
+      var emailError = document.getElementById('emailError');
+      var numberError = document.getElementById('numberError');
+      var messageError = document.getElementById('messageError');
+    
+
+      // Reset errors
+      nameError.innerHTML = "";
+      emailError.innerHTML = "";
+      numberError.innerHTML = "";
+      messageError.innerHTML = "";
+
+      
+      // Name validation
+      if (name.trim() === "") {
+        nameError.innerHTML = "Name is required";
+        swal("Error", "Please Enter Your Name", "error");
+      
+        return;
+      }
+
+
+      // Email validation
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        emailError.innerHTML = "Invalid email address";
+        swal("Error", "Please Enter Your Valid Email Address", "error");
+
+        return;
+      }
+
+     
+
+      //   if (number.trim() === "") {
+      //   numberError.innerHTML = "Number is required";
+      //   return;
+      // }
+
+      
+
+      var phonePattern = /^(\d{10}|\d{3}[-\s]\d{3}[-\s]\d{4}|\(\d{3}\)[-\s]\d{3}[-\s]\d{4})$/;
+   
+      if (!phonePattern.test(number)) {
+        numberError.innerHTML = "Invalid phone number address";
+        swal("Error", "Please Enter a Valid Phone Number", "error");
+
+        return;
+      }
+      
+
+      // Message validation
+      if (message.trim() === "") {
+        messageError.innerHTML = "Message is required";
+
+        swal("Error", "Please Text Purpose Of Contact", "error");
+
+        return;
+        
+      }
+
+      // If all validations pass, send the email
+      sendEmail(name, email,number,message);
+    }
+
+
+  </script>
+  <script>
+
+    emailjs.init("hDbdVIiECLtHrBj-p");
+
+    function sendEmail() {
+      
+        // var userName = document.getElementById('name').value;
+        // var phone = document.getElementById('phone').value;
+        // var email = document.getElementById('email').value;
+        // var email = document.getElementById('message').value;
+        // var messageBody = "Name " + userName +
+        // "<br/> Phone " + phone +
+        // "<br/> Email " + email +"<br/> Email " + email;
+        
+        var form = document.getElementById("contactForm");
+        emailjs.sendForm("service_v3v0tqx", "template_465m6hx", form)
+          
+        .then(
+                function(response) {
+                  //       Swal.fire({
+                  //     icon: 'success',
+                  //     title: 'Success!',
+                  //     text: 'Form submitted successfully!',
+                  // });
+
+                    console.log("Email sent successfully", response);
+                    // alert("Your message has been sent successfully.");
+                    swal("Secussful", "Your message has been sent successfully", "success");
+                
+                  },
+
+                function(error) {
+                   document.getElementById("InsertRecordFIELDNAME").required = true;
+
+                    console.log("Failed to send email. Error:", error);
+          swal("Error", "You clicked the button!", "error");
+
+                    alert("Sorry, there was an error sending your message. Please try again later.");
+                }
+            );
+    }
+</script>
+
+
+</body>
+</html>
