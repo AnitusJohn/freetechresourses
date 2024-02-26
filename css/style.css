@@ -1001,3 +1001,10 @@ overflow-x: hidden;
   margin-left: 10px;
   color: #fff;
 }
+
+.catgry_lst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
